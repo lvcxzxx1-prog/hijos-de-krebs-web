@@ -269,12 +269,48 @@
     <script>
       const toggle = document.querySelector('.nav__toggle');
       const menu = document.querySelector('#menu');
+      const mobileNavQuery =
+        typeof window.matchMedia === 'function' ? window.matchMedia('(max-width: 900px)') : null;
+
       if (toggle && menu) {
+        const isMobileView = () => (mobileNavQuery ? mobileNavQuery.matches : window.innerWidth <= 900);
+
+        const syncMenuState = () => {
+          if (!isMobileView()) {
+            menu.classList.remove('is-open');
+            menu.removeAttribute('aria-hidden');
+            toggle.setAttribute('aria-expanded', 'false');
+            return;
+          }
+
+          const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+          menu.classList.toggle('is-open', isExpanded);
+          menu.setAttribute('aria-hidden', String(!isExpanded));
+        };
+
+        syncMenuState();
+
         toggle.addEventListener('click', () => {
-          const expanded = toggle.getAttribute('aria-expanded') === 'true';
-          toggle.setAttribute('aria-expanded', String(!expanded));
-          menu.classList.toggle('is-open');
+          const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+          const nextState = !isExpanded;
+
+          toggle.setAttribute('aria-expanded', String(nextState));
+
+          if (isMobileView()) {
+            menu.classList.toggle('is-open', nextState);
+            menu.setAttribute('aria-hidden', String(!nextState));
+          }
         });
+
+        if (mobileNavQuery) {
+          if (typeof mobileNavQuery.addEventListener === 'function') {
+            mobileNavQuery.addEventListener('change', syncMenuState);
+          } else if (typeof mobileNavQuery.addListener === 'function') {
+            mobileNavQuery.addListener(syncMenuState);
+          }
+        } else {
+          window.addEventListener('resize', syncMenuState);
+        }
       }
     </script>
   </body>
