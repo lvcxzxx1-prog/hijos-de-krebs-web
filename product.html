@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF Premium: Anatomía para Ingresantes | Hijos de Krebs</title>
+    <meta
+      name="description"
+      content="Detalle del recurso PDF Premium de Anatomía para ingresantes y opciones de pago disponibles."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a href="index.html" class="brand">Hijos de Krebs</a>
+        <nav class="nav" aria-label="Principal">
+          <button class="nav__toggle" aria-expanded="false" aria-controls="menu">
+            <span class="sr-only">Abrir menú</span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul id="menu" class="nav__list">
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="index.html#metodologia">Metodología</a></li>
+            <li><a href="index.html#recursos">Recursos</a></li>
+            <li><a href="index.html#testimonios">Testimonios</a></li>
+            <li><a href="index.html#contacto" class="nav__cta">Agenda tu asesoría</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero hero--product">
+        <div class="container hero__content">
+          <div class="hero__copy">
+            <p class="eyebrow">Recurso digital</p>
+            <h1>PDF Premium: Anatomía para Ingresantes</h1>
+            <p class="lead">
+              Resúmenes visuales, mapas mentales y ejercicios resueltos para dominar la anatomía humana antes del examen de admisión.
+            </p>
+            <p class="price">
+              <strong>Precio:</strong> S/ 59.90
+            </p>
+            <div class="hero__actions">
+              <button class="btn btn--primary" type="button" data-action="mp-buy">Comprar con MercadoPago</button>
+              <a class="btn btn--ghost" href="#pago-local">Pagar con Yape o Plin</a>
+            </div>
+            <div id="payment-alert" class="payment-alert" role="status" aria-live="polite"></div>
+          </div>
+          <div class="hero__media" aria-label="Vista previa del PDF">
+            <div class="video-frame video-frame--product">
+              <p>Incluye 120 páginas con diagramas anatómicos y ejercicios prácticos.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature">
+        <div class="container feature__grid">
+          <div>
+            <h2>Qué encontrarás dentro</h2>
+            <ul class="feature__list">
+              <li>Diagramas anatómicos detallados con estilo vintage.</li>
+              <li>Ejercicios con soluciones paso a paso para reforzar cada tema.</li>
+              <li>Mapas mentales descargables para preparar tus apuntes.</li>
+              <li>Recomendaciones de estudio y plan de repaso en 4 semanas.</li>
+            </ul>
+          </div>
+          <div class="feature__cards">
+            <article>
+              <p class="tag">Formato digital</p>
+              <h3>Descarga inmediata</h3>
+              <p>Recibe el PDF en tu correo apenas confirmemos el pago.</p>
+            </article>
+            <article>
+              <p class="tag">Actualizaciones</p>
+              <h3>Versiones futuras incluidas</h3>
+              <p>Te enviaremos sin costo las actualizaciones del material durante un año.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="pago-local" class="payment-options">
+        <div class="container">
+          <h2>Otras formas de pago</h2>
+          <div class="payment-options__grid">
+            <article class="payment-card">
+              <h3>MercadoPago</h3>
+              <p>
+                Usa el botón «Comprar con MercadoPago» para pagar con tarjeta de débito, crédito o billeteras compatibles. Una vez
+                completado el pago, recibirás tu comprobante y el enlace de descarga en tu correo.
+              </p>
+            </article>
+            <article class="payment-card payment-card--alt">
+              <h3>Pago local: Yape o Plin</h3>
+              <ol>
+                <li>Envía S/ 59.90 al número <strong>999 888 777</strong> (nombre: Hijos de Krebs).</li>
+                <li>Adjunta la captura del pago y tu correo electrónico a <a href="mailto:pagos@hijosdekrebs.com">pagos@hijosdekrebs.com</a>.</li>
+                <li>Te enviaremos el PDF y la confirmación en menos de 12 horas.</li>
+              </ol>
+              <p class="note">Estas instrucciones son de ejemplo. Personalízalas con tus datos reales antes de publicar.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Hijos de Krebs. Laboratorio de ideas.</p>
+        <a href="mailto:hola@hijosdekrebs.com">hola@hijosdekrebs.com</a>
+      </div>
+    </footer>
+
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <script type="module" src="scripts/product.js"></script>
+  </body>
+</html>
