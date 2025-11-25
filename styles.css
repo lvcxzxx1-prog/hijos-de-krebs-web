@@ -105,6 +105,25 @@ img {
   border-radius: var(--radius-sm);
 }
 
+.product-card__mockup,
+.video-frame img,
+.product-hero__media img,
+.qr-mockup {
+  transition: transform 0.35s ease, box-shadow 0.35s ease, filter 0.35s ease;
+}
+
+.product-card:hover .product-card__mockup,
+.product-card:focus-within .product-card__mockup,
+.video-frame:hover img,
+.video-frame:focus-within img,
+.product-hero__media img:hover,
+.payment-module:hover .qr-mockup,
+.payment-module:focus-within .qr-mockup {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-glow-strong);
+  filter: saturate(1.05);
+}
+
 .container {
   width: min(100% - 3rem, var(--max-width));
   margin-inline: auto;
