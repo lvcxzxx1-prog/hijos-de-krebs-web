@@ -81,11 +81,33 @@ body {
   margin: 0;
   font-family: var(--font-sans);
   color: var(--color-text);
-  background: radial-gradient(circle at 18% 20%, rgba(40, 108, 130, 0.25), transparent 42%),
-    radial-gradient(circle at 82% 12%, rgba(24, 200, 176, 0.2), transparent 40%),
-    linear-gradient(160deg, #050a13 0%, #09172b 45%, #050c18 100%);
+  background: radial-gradient(140% 140% at 25% 25%, rgba(34, 78, 110, 0.2) 0%, transparent 40%),
+    radial-gradient(120% 120% at 75% 15%, rgba(12, 120, 118, 0.18) 0%, transparent 35%),
+    radial-gradient(circle at 50% 20%, #0a1626 0%, #050c18 50%, #02060c 100%);
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle, rgba(55, 240, 213, 0.04) 1px, transparent 1px),
+    radial-gradient(circle, rgba(55, 240, 213, 0.035) 1px, transparent 1px);
+  background-size: 38px 38px, 32px 32px;
+  background-position: 10px 12px, 0 0;
+  opacity: 0.45;
+  mix-blend-mode: screen;
+  z-index: 0;
 }
 
 a {
@@ -529,10 +551,35 @@ ul {
 }
 
 .value-prop .icon {
-  font-size: 1.3rem;
-  color: var(--color-accent);
+  width: 54px;
+  height: 54px;
   display: inline-flex;
-  margin-bottom: 0.6rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.8rem;
+  padding: 0.35rem;
+  border-radius: 16px;
+  background: radial-gradient(circle at 30% 30%, rgba(55, 240, 213, 0.18), rgba(55, 240, 213, 0.06));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 10px 30px rgba(5, 10, 19, 0.45);
+}
+
+.icon svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--color-accent);
+}
+
+.icon--emerald svg {
+  stroke: var(--color-accent);
+  stroke-width: 1.2;
+}
+
+.icon path,
+.icon rect,
+.icon circle,
+.icon polygon,
+.icon line {
+  fill: var(--color-accent);
 }
 
 /* Cards */
