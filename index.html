@@ -31,6 +31,7 @@
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#metodologia">Metodología</a></li>
             <li><a href="#recursos">Recursos</a></li>
+            <li><a href="product.html">Producto destacado</a></li>
             <li><a href="#testimonios">Testimonios</a></li>
             <li><a href="#blog">Blog</a></li>
             <li><a href="#contacto" class="nav__cta">Agenda tu asesoría</a></li>
@@ -40,7 +41,7 @@
     </header>
 
     <main>
-      <section id="inicio" class="hero">
+      <section id="inicio" class="hero reveal" data-delay="0">
         <div class="container hero__content">
           <div class="hero__copy">
             <p class="eyebrow">Laboratorio de ideas</p>
@@ -49,12 +50,17 @@
               Recursos didácticos y asesorías personalizadas para futuros profesionales de la salud.
             </p>
             <div class="hero__actions">
-              <a class="btn btn--primary" href="#recursos">Explora nuestros recursos</a>
+              <a class="btn btn--primary" href="product.html">Descubre el atlas premium</a>
               <a class="btn btn--ghost" href="#contacto">Agenda una asesoría</a>
             </div>
           </div>
           <div class="hero__media" aria-label="Video introductorio">
-            <div class="video-frame">
+            <div class="video-frame glow-hover">
+              <img
+                src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=80"
+                alt="Investigadora usando un microscopio en laboratorio"
+                loading="lazy"
+              />
               <button class="video-frame__button" aria-label="Reproducir video">▶</button>
               <p>Explora fragmentos de nuestras clases y sesiones 1:1.</p>
             </div>
@@ -62,7 +68,7 @@
         </div>
       </section>
 
-      <section class="logos" aria-label="Alianzas y medios">
+      <section class="logos reveal" aria-label="Alianzas y medios" data-delay="1">
         <div class="container logos__grid">
           <span>UNMSM Pre</span>
           <span>Ciencia Perú</span>
@@ -71,7 +77,7 @@
         </div>
       </section>
 
-      <section id="metodologia" class="value-prop">
+      <section id="metodologia" class="value-prop reveal" data-delay="1">
         <div class="container value-prop__grid">
           <div>
             <h2>Nuestra metodología</h2>
@@ -81,17 +87,17 @@
             </p>
           </div>
           <div class="value-prop__pillars">
-            <article>
+            <article class="glow-card">
               <span class="icon" aria-hidden="true">🔬</span>
               <h3>Rigor científico</h3>
               <p>Contenidos alineados a los sílabos de las principales universidades peruanas.</p>
             </article>
-            <article>
+            <article class="glow-card">
               <span class="icon" aria-hidden="true">🧬</span>
               <h3>Aprendizaje visual</h3>
               <p>Infografías estilo vintage y diagramas anatómicos que facilitan la memorización.</p>
             </article>
-            <article>
+            <article class="glow-card">
               <span class="icon" aria-hidden="true">❤️</span>
               <h3>Acompañamiento humano</h3>
               <p>Feedback personalizado y sesiones en vivo para resolver todas tus dudas.</p>
@@ -100,12 +106,17 @@
         </div>
       </section>
 
-      <section id="recursos" class="highlights">
+      <section id="recursos" class="highlights reveal" data-delay="1">
         <div class="container">
           <h2>Recursos destacados</h2>
           <div class="card-grid">
-            <article class="product-card">
-              <div class="product-card__mockup" aria-hidden="true"></div>
+            <article class="product-card glow-card">
+              <img
+                class="product-card__mockup"
+                src="https://images.unsplash.com/photo-1559757175-57727c784726?auto=format&fit=crop&w=800&q=80"
+                alt="Ilustración anatómica en alta resolución"
+                loading="lazy"
+              />
               <div class="product-card__content">
                 <span class="badge">Más vendido</span>
                 <h3>PDF Premium: Anatomía para Ingresantes</h3>
@@ -113,8 +124,13 @@
                 <a class="btn btn--secondary" href="#">Agregar al carrito</a>
               </div>
             </article>
-            <article class="product-card">
-              <div class="product-card__mockup" aria-hidden="true"></div>
+            <article class="product-card glow-card">
+              <img
+                class="product-card__mockup"
+                src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&w=800&q=80"
+                alt="Visualización de doble hélice de ADN"
+                loading="lazy"
+              />
               <div class="product-card__content">
                 <span class="badge badge--warm">Nuevo</span>
                 <h3>Paquete de infografías: Biología celular</h3>
@@ -122,8 +138,13 @@
                 <a class="btn btn--secondary" href="#">Descubrir más</a>
               </div>
             </article>
-            <article class="product-card">
-              <div class="product-card__mockup" aria-hidden="true"></div>
+            <article class="product-card glow-card">
+              <img
+                class="product-card__mockup"
+                src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=80"
+                alt="Laboratorio académico con equipo de química"
+                loading="lazy"
+              />
               <div class="product-card__content">
                 <h3>Sesiones 1:1 Asesoría integral</h3>
                 <p>Agenda sesiones personalizadas para resolver dudas y planificar tu ruta de estudio.</p>
@@ -134,7 +155,7 @@
         </div>
       </section>
 
-      <section class="feature" id="blog">
+      <section class="feature reveal" id="blog" data-delay="1">
         <div class="container feature__grid">
           <div>
             <h2>Laboratorio de contenido</h2>
@@ -144,12 +165,12 @@
             <a class="btn btn--ghost" href="#">Ir al blog</a>
           </div>
           <div class="feature__cards">
-            <article>
+            <article class="glow-card">
               <p class="tag">Mitos del cuerpo humano</p>
               <h3>¿Realmente usamos solo el 10% del cerebro?</h3>
               <p>Desmontamos los mitos más comunes con evidencia y ejemplos prácticos.</p>
             </article>
-            <article>
+            <article class="glow-card">
               <p class="tag">Química en 5 minutos</p>
               <h3>Reacciones ácido-base para el examen de admisión</h3>
               <p>Te explicamos los conceptos clave con analogías memorables y ejercicios resueltos.</p>
@@ -158,23 +179,23 @@
         </div>
       </section>
 
-      <section id="testimonios" class="testimonials">
+      <section id="testimonios" class="testimonials reveal" data-delay="1">
         <div class="container">
           <h2>Voces en resonancia</h2>
           <div class="testimonial__carousel">
-            <article>
+            <article class="glow-card">
               <blockquote>
                 “Con los materiales de Hijos de Krebs logré entender biología de forma visual y ordenada.”
               </blockquote>
               <p class="author">María S. · Ingresante UNMSM</p>
             </article>
-            <article>
+            <article class="glow-card">
               <blockquote>
                 “Las asesorías personalizadas me dieron seguridad antes del examen. Las recomiendo totalmente.”
               </blockquote>
               <p class="author">Luis A. · Postulante medicina</p>
             </article>
-            <article>
+            <article class="glow-card">
               <blockquote>
                 “La combinación de rigor y cercanía es única. Se nota el cariño con el que preparan cada recurso.”
               </blockquote>
@@ -184,7 +205,7 @@
         </div>
       </section>
 
-      <section class="newsletter">
+      <section class="newsletter reveal" data-delay="1">
         <div class="container newsletter__grid">
           <div>
             <h2>Descarga tu guía gratuita</h2>
@@ -200,7 +221,7 @@
         </div>
       </section>
 
-      <section id="contacto" class="contact">
+      <section id="contacto" class="contact reveal" data-delay="1">
         <div class="container contact__grid">
           <div>
             <h2>Conecta con el laboratorio</h2>
