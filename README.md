@@ -3,7 +3,7 @@
 Este documento define el esquema base, la estructura de navegación y las recomendaciones de implementación para el sitio web "Hijos de Krebs", una plataforma educativa enfocada en material didáctico riguroso de ciencias para estudiantes preuniversitarios y universitarios en Perú.
 
 ## Objetivos del sitio
-- Presentar el proyecto con un estilo científico elegante y cercano.
+- Presentar el proyecto con un estilo científico elegante y cercano. 
 - Promocionar y vender material educativo digital (PDFs, recursos visuales, clases y asesorías).
 - Potenciar la captación de leads mediante boletín de correo y canales sociales.
 - Facilitar la conversión a través de llamadas a la acción claras e integración con pasarelas de pago locales.
