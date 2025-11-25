@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="page-product">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PDF Premium: Anatomía para Ingresantes | Hijos de Krebs</title>
+    <title>Guía Premium de Anatomía | Hijos de Krebs</title>
     <meta
       name="description"
-      content="Detalle del recurso PDF Premium de Anatomía para ingresantes y opciones de pago disponibles."
+      content="Domina anatomía humana con la guía premium ilustrada de Hijos de Krebs. Incluye resúmenes visuales, mapas mentales y módulo de pago local Yape/Plin."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="page-product">
     <header class="site-header">
       <div class="container">
         <a href="index.html" class="brand">Hijos de Krebs</a>
@@ -32,97 +32,245 @@
             <li><a href="index.html#metodologia">Metodología</a></li>
             <li><a href="index.html#recursos">Recursos</a></li>
             <li><a href="index.html#testimonios">Testimonios</a></li>
-            <li><a href="index.html#contacto" class="nav__cta">Agenda tu asesoría</a></li>
+            <li><a href="#checkout" class="nav__cta">Comprar ahora</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="hero hero--product">
-        <div class="container hero__content">
-          <div class="hero__copy">
-            <p class="eyebrow">Recurso digital</p>
-            <h1>PDF Premium: Anatomía para Ingresantes</h1>
-            <p class="lead">
-              Resúmenes visuales, mapas mentales y ejercicios resueltos para dominar la anatomía humana antes del examen de admisión.
-            </p>
-            <p class="price">
-              <strong>Precio:</strong> S/ 59.90
+      <section class="product-hero reveal" id="inicio" data-delay="0">
+        <div class="container product-hero__grid">
+          <div>
+            <span class="badge product-hero__badge">PDF Premium</span>
+            <h1 class="product-hero__title">Atlas Ilustrado de Anatomía para Ingresantes</h1>
+            <p class="product-hero__lead">
+              Aprende anatomía con mapas visuales estilo Kurzgesagt, resúmenes en alta resolución y ejercicios clínicos resueltos.
+              Un recurso completo diseñado para estudiantes de medicina, enfermería y ciencias de la salud.
             </p>
             <div class="hero__actions">
-              <button class="btn btn--primary" type="button" data-action="mp-buy">Comprar con MercadoPago</button>
-              <a class="btn btn--ghost" href="#pago-local">Pagar con Yape o Plin</a>
+              <a class="btn btn--primary" href="#checkout">Ir al pago seguro</a>
+              <a class="btn btn--ghost" href="#modules">Ver contenido</a>
             </div>
-            <div id="payment-alert" class="payment-alert" role="status" aria-live="polite"></div>
           </div>
-          <div class="hero__media" aria-label="Vista previa del PDF">
-            <div class="video-frame video-frame--product">
-              <p>Incluye 120 páginas con diagramas anatómicos y ejercicios prácticos.</p>
-            </div>
+          <div class="product-hero__media" aria-label="Mockup del producto">
+            <img
+              src="https://source.unsplash.com/random/1000x800/?anatomy,medical-illustration"
+              alt="Vista previa de la guía digital de anatomía en tablet"
+              loading="lazy"
+            />
+            <p class="support-note">Incluye versión imprimible y editable para tablets.</p>
           </div>
         </div>
       </section>
 
-      <section class="feature">
-        <div class="container feature__grid">
-          <div>
-            <h2>Qué encontrarás dentro</h2>
-            <ul class="feature__list">
-              <li>Diagramas anatómicos detallados con estilo vintage.</li>
-              <li>Ejercicios con soluciones paso a paso para reforzar cada tema.</li>
-              <li>Mapas mentales descargables para preparar tus apuntes.</li>
-              <li>Recomendaciones de estudio y plan de repaso en 4 semanas.</li>
-            </ul>
-          </div>
-          <div class="feature__cards">
-            <article>
-              <p class="tag">Formato digital</p>
-              <h3>Descarga inmediata</h3>
-              <p>Recibe el PDF en tu correo apenas confirmemos el pago.</p>
-            </article>
-            <article>
-              <p class="tag">Actualizaciones</p>
-              <h3>Versiones futuras incluidas</h3>
-              <p>Te enviaremos sin costo las actualizaciones del material durante un año.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="pago-local" class="payment-options">
+      <section class="product-specs reveal" id="beneficios" data-delay="1">
         <div class="container">
-          <h2>Otras formas de pago</h2>
-          <div class="payment-options__grid">
-            <article class="payment-card">
-              <h3>MercadoPago</h3>
-              <p>
-                Usa el botón «Comprar con MercadoPago» para pagar con tarjeta de débito, crédito o billeteras compatibles. Una vez
-                completado el pago, recibirás tu comprobante y el enlace de descarga en tu correo.
-              </p>
+          <h2>Lo que hace única a la guía</h2>
+          <div class="specs-grid">
+            <article class="spec-card">
+              <span>Formato</span>
+              <h3>PDF interactivo y archivos PNG</h3>
+              <p>Enlaces internos, navegación por capítulos y láminas exportables para tus apuntes digitales.</p>
             </article>
-            <article class="payment-card payment-card--alt">
-              <h3>Pago local: Yape o Plin</h3>
-              <ol>
-                <li>Envía S/ 59.90 al número <strong>999 888 777</strong> (nombre: Hijos de Krebs).</li>
-                <li>Adjunta la captura del pago y tu correo electrónico a <a href="mailto:pagos@hijosdekrebs.com">pagos@hijosdekrebs.com</a>.</li>
-                <li>Te enviaremos el PDF y la confirmación en menos de 12 horas.</li>
-              </ol>
-              <p class="note">Estas instrucciones son de ejemplo. Personalízalas con tus datos reales antes de publicar.</p>
+            <article class="spec-card">
+              <span>Actualizaciones</span>
+              <h3>Acceso de por vida</h3>
+              <p>Recibe nuevas ediciones y material complementario sin costo adicional.</p>
+            </article>
+            <article class="spec-card">
+              <span>Extras</span>
+              <h3>Plantillas de estudio</h3>
+              <p>Calendarios, fichas de repaso y exámenes tipo admisión en formato imprimible.</p>
+            </article>
+            <article class="spec-card">
+              <span>Soporte</span>
+              <h3>Canal directo con el equipo</h3>
+              <p>Resolución de dudas vía WhatsApp y sesiones grupales mensuales.</p>
             </article>
           </div>
+        </div>
+      </section>
+
+      <section class="module-section reveal" id="modules" data-delay="1">
+        <div class="container">
+          <h2>Contenido dividido en misiones</h2>
+          <div class="module-grid">
+            <article class="module-card">
+              <h3>1. Fundamentos y orientación</h3>
+              <ul>
+                <li>Principios anatómicos y planos corporales</li>
+                <li>Terminología visualizada con ilustraciones tipo infografía</li>
+                <li>Checklist de diagnóstico inicial</li>
+              </ul>
+            </article>
+            <article class="module-card">
+              <h3>2. Sistemas del cuerpo humano</h3>
+              <ul>
+                <li>Mapas a color de cada sistema</li>
+                <li>Resúmenes con casos clínicos y preguntas guía</li>
+                <li>Comparativa rápida para exámenes de admisión</li>
+              </ul>
+            </article>
+            <article class="module-card">
+              <h3>3. Laboratorio de práctica</h3>
+              <ul>
+                <li>Ejercicios descargables y claves de respuesta</li>
+                <li>Plantillas de estudio activo y spaced repetition</li>
+                <li>Acceso a sesiones grupales en vivo</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="checkout reveal" id="checkout" data-delay="1">
+        <div class="container checkout__grid">
+          <aside class="order-summary">
+            <header>
+              <h2>Resumen de tu pedido</h2>
+              <p>Atlas Ilustrado de Anatomía + kit de estudio</p>
+            </header>
+            <p class="order-summary__price">S/ 89.00</p>
+            <ul class="order-summary__list">
+              <li>Descarga inmediata del PDF y archivos editables</li>
+              <li>Actualizaciones trimestrales sin costo</li>
+              <li>Garantía de devolución en 7 días</li>
+            </ul>
+          </aside>
+
+          <section class="payment-module" aria-labelledby="pago-local">
+            <header>
+              <h2 id="pago-local">Pago local seguro</h2>
+              <span>Yape · Plin</span>
+            </header>
+            <div class="payment-tabs" role="tablist">
+              <button class="payment-tab is-active" type="button" data-payment-tab="yape" role="tab" aria-selected="true">
+                Pagar con Yape
+              </button>
+              <button class="payment-tab" type="button" data-payment-tab="plin" role="tab" aria-selected="false">
+                Pagar con Plin
+              </button>
+            </div>
+            <div class="payment-panel is-active" data-payment-panel="yape" role="tabpanel">
+              <div class="payment-info">
+                <strong>Escanea el QR yapeando a 999 123 456</strong>
+                <p>Utiliza el concepto <strong>ATLAS-HDK</strong> para identificar tu pago.</p>
+              </div>
+              <img
+                class="qr-mockup"
+                src="https://source.unsplash.com/random/520x520/?microscope,science"
+                alt="Macro de microscopio en laboratorio"
+                loading="lazy"
+              />
+              <form class="payment-form payment-form--yape">
+                <div class="form-row">
+                  <label for="yape-code">Código o captura</label>
+                  <input id="yape-code" type="text" name="yape-code" placeholder="Ingresa el código de operación" required />
+                </div>
+                <div class="form-row">
+                  <label for="yape-notes">Notas adicionales (opcional)</label>
+                  <textarea
+                    id="yape-notes"
+                    name="yape-notes"
+                    rows="3"
+                    placeholder="Ejemplo: enviar comprobante al correo ..."
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn--primary">Enviar comprobante</button>
+                <p class="support-note">Verificamos tu pago en menos de 10 minutos y te enviamos el acceso por correo.</p>
+              </form>
+            </div>
+            <div class="payment-panel" data-payment-panel="plin" role="tabpanel" hidden>
+              <div class="payment-info">
+                <strong>Transfiere por Plin al 988 654 321</strong>
+                <p>Coloca en la referencia <strong>PLIN-ATLAS</strong> y guarda tu constancia.</p>
+              </div>
+              <img
+                class="qr-mockup"
+                src="https://source.unsplash.com/random/520x520/?dna,laboratory"
+                alt="Detalle visual de cadena de ADN"
+                loading="lazy"
+              />
+              <form class="payment-form payment-form--plin">
+                <div class="form-row">
+                  <label for="plin-code">Número de operación</label>
+                  <input id="plin-code" type="text" name="plin-code" placeholder="Ejemplo: 1234567890" required />
+                </div>
+                <div class="form-row">
+                  <label for="plin-email">Correo para envío</label>
+                  <input id="plin-email" type="email" name="plin-email" placeholder="tucorreo@dominio.com" required />
+                </div>
+                <button type="submit" class="btn btn--secondary">Confirmar pago Plin</button>
+                <p class="support-note">Nuestro equipo confirma tu transferencia y envía el acceso digital en tu correo.</p>
+              </form>
+            </div>
+          </section>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container">
-        <p>&copy; <span id="year"></span> Hijos de Krebs. Laboratorio de ideas.</p>
-        <a href="mailto:hola@hijosdekrebs.com">hola@hijosdekrebs.com</a>
+      <div class="container footer__grid">
+        <div>
+          <a href="index.html#inicio" class="brand">Hijos de Krebs</a>
+          <p>Laboratorio creativo de ciencias para estudiantes que sueñan con transformar el mundo.</p>
+        </div>
+        <nav aria-label="Enlaces rápidos">
+          <h3>Explora</h3>
+          <ul>
+            <li><a href="index.html#recursos">Recursos</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="footer__cta">
+          <h3>Recibe novedades</h3>
+          <form class="footer__form">
+            <label for="footer-email" class="sr-only">Correo electrónico</label>
+            <input type="email" id="footer-email" name="footer-email" placeholder="Tu correo" />
+            <button type="submit" class="btn btn--ghost">Enviar</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__legal">
+        <p>© 2024 Hijos de Krebs. Todos los derechos reservados.</p>
+        <a href="#">Políticas de privacidad</a>
+        <a href="#">Términos y condiciones</a>
       </div>
     </footer>
 
-    <script src="https://sdk.mercadopago.com/js/v2"></script>
-    <script type="module" src="scripts/product.js"></script>
+    <script>
+      const toggle = document.querySelector('.nav__toggle');
+      const menu = document.querySelector('#menu');
+      if (toggle && menu) {
+        toggle.addEventListener('click', () => {
+          const expanded = toggle.getAttribute('aria-expanded') === 'true';
+          toggle.setAttribute('aria-expanded', String(!expanded));
+          menu.classList.toggle('is-open');
+        });
+      }
+
+      const tabs = document.querySelectorAll('[data-payment-tab]');
+      const panels = document.querySelectorAll('[data-payment-panel]');
+
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+          const target = tab.getAttribute('data-payment-tab');
+
+          tabs.forEach((item) => {
+            const isActive = item === tab;
+            item.classList.toggle('is-active', isActive);
+            item.setAttribute('aria-selected', String(isActive));
+          });
+
+          panels.forEach((panel) => {
+            const matches = panel.getAttribute('data-payment-panel') === target;
+            panel.classList.toggle('is-active', matches);
+            panel.toggleAttribute('hidden', !matches);
+          });
+        });
+      });
+    </script>
   </body>
 </html>
